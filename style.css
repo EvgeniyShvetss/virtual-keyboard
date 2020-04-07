@@ -1,0 +1,73 @@
+* {
+  padding: 0; 
+  margin: 0;
+}
+
+.keyboard {
+  text-align: center; 
+  width: 90vw;
+  /* height: 35vh; */
+  top: 300px;
+  margin: auto; 
+  background-color: #061F22;
+  user-select: none;
+}
+
+.textarea {
+  width: calc(90vw - 12px);
+  height: 200px;
+  display: block;
+  margin: auto;
+  padding: 5px; 
+  resize: none;
+}
+
+.keyboard__key {
+  width: 5vw; 
+  height: 7vh;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: background-color 0.1s;
+  margin: 5px 2px; 
+  border-radius: 10px; 
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: top;
+  user-select: none;
+  font-size: 1.2rem;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.keyboard__key:hover {
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+.keyboard__key_active {
+  background-color: #629599;
+  border-radius: 15px;
+  transition: .3s;
+  color: #fff;
+}
+
+.keyboard__key_active:hover {
+  background-color: rgba(150, 255, 150, 0.9);
+}
+
+.keyboard__key_large {
+  border-radius: 10px;
+  width: 10vw; 
+}
+
+.keyboard__key_space {
+  border-radius: 10px;
+  width: 37vw;
+  max-width: 422px;
+}
+
+#Delete {
+  display: none;
+}
